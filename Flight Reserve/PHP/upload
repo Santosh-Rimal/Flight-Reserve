@@ -1,0 +1,15 @@
+<?php 
+if(isset($_FILES['image'])){
+	$file_name=$_FILES['image']['name'];
+	$file_size=$_FILES['image']['size'];
+	$file_tem=$_FILES['image']['tmp_name'];
+	$file_type=$_FILES['image']['type'];
+
+	if(move_uploaded_file($_FILES,"photo/".$file_name)){
+		echo "fike is upload successfully";
+}
+else{
+	echo "Unable to upload file"
+}
+
+ ?>

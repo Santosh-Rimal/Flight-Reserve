@@ -1,0 +1,167 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+background-image: url("../../Images And Photo/Download/Plane/plane.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: relative;
+}
+div.text{
+	background: rgba(255, 255, 255, .4);
+	margin-top: -4px;
+	height: 50px;
+	text-align: center;	
+}
+li{
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 4px;
+	margin-left: 6px;
+	background-color: rgba(0, 0, 0, .2);
+	padding: 8px;
+	border-radius: 4px;
+}
+li:hover{
+	border: 1px solid white;
+	background: rgba(255, 255, 255, .8);
+	border-radius: 4px;
+	border-radius: 10px;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+}
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.loginregister_info {
+		top: 20px;
+    left: 550px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
+    width: 278px;
+    height: 340px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 4px rgba(255, 255, 255, .4);
+   border-radius: 50px;
+   transition: .5s;
+}
+.butn{
+	
+	margin: 40px auto;
+	position: relative;
+	width: 168px;
+	background: rgba(255, 255, 255, .5);
+	border-radius: 30px;
+	height: 40px;
+	cursor: pointer;
+}
+div#btn{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 88px;
+	height: 100%;
+	border-radius: 30px;
+	transition: .5s;
+	background: rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+button.login,button.register{
+	color: black;
+	border-radius: 8px;
+	width: 80px;
+	padding: 12px;
+	outline: none;
+	background: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+button{
+	padding: 20px;
+}
+div.login{
+	top: 80px;
+	position: absolute;
+	left: 20px;
+	transition: .5s;
+}
+div.relogin{
+	top: 600px;
+	position: absolute;
+	left: 20px;
+	transition: .5s;	
+}
+div.register{
+	top: 80px;
+	position: absolute;
+	left: 400px;
+	transition: .5s;
+}
+div.reregister{
+	top: 600px;
+	position: absolute;
+	left: 20px;
+	transition: .5s;	
+}
+label,span{
+	display: block;
+	margin: 10px auto 10px auk.wsto;
+	padding: 10px auto 10px auto;
+	color: blue;
+}
+input{
+    display: block;
+    width: 173px;
+    padding: 10px 20px 10px 38px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+}
+input[type="submit"]{
+    width: 240px;
+    padding: 15px;
+    margin: 18px auto auto 0px;
+    display:block;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+div.icon{
+	position: relative;
+}
+div.icon i{
+	position: absolute;
+	padding: 10px;
+	border-right: 1px solid black;
+}
+div.icon img{
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	border-right: 1px solid black;
+	padding: 1px;
+}
+span.message{
+	color: red;
+	size: 10px;
+	margin:0 40px;
+	background-color: rgba(0, 0, 0, .1 );
+}

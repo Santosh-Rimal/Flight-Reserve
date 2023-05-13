@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+body {
+background-image: url("../../../../Images And Photo/Download/Plane/plane.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: relative;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: .8vh 1.8vw;
+    border: .14rem solid white;
+    border-radius: 1rem;
+    margin: 2.5vh 2vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+div.link{
+    background: rgba(255, 255, 255, .4);
+    text-align: center;
+    /*position: absolute;*/
+    width: 100%;
+    height: 11.5vh fixed;
+}
+input {
+    display: block;
+    width: 173px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+input[type="submit"]{
+    width: 200px;
+    padding: 15px;
+    margin: 18px auto auto 0px;
+    display:block;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type="file"]{
+    width: 200px;
+   
+    font-size: 20px;
+}
+form{
+	margin-top: 20vh;
+	margin-left: 30vw;
+}
+li.logout{
+    background-color: red;
+}

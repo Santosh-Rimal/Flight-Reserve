@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flight-Reserve</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/HTML/style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/HTML/fontawesome/css/all.css">
+</head>
+<body>
+<section class="main">
+<div class="text">
+	<ul>
+		<!-- <a href="index.html"><li></i>HOME</li></a> -->
+		<!-- <a href="contact.html"><li>CONTACT</li></a> -->
+	</ul>
+</div>
+</section>
+<div class="loginregister_info" id="logreg">
+		<div class="butn" id="button">
+			<div id="btn"></div>
+			<button class="login" onclick="login()"><b>Login</b></button>
+			<button class="register" onclick="register()"><b>Register</b></button>
+		</div>
+		<div class="login" id="lid">
+			<form name="form" id="login_info" action="../PHP/Login.php" method="post" enctype="multipart/form-data" onsubmit="return validation()">
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="username" id="lemail" placeholder="Email" required autocomplete="off"><span id="lem" class="message"></span>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="password" id="lpass" placeholder="password" required autocomplete="off"><span id="lpassm" class="message"></span>
+				</div>
+				<input type="submit" value="Login" name="submit">
+				<span>Not Register yet?<a href="#" onclick="rgst()">Click to register</a></span>
+			</form>
+		</div>
+		<div class="relogin" id="rlid">
+			<form id="login_info" action="../PHP/Login.php" method="post" enctype="multipart/form-data">
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="reusername" id="relemail" placeholder="Email" required autocomplete="off"><span id="relem" class="message"></span>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="pass" id="relpass" placeholder="password" required autocomplete="off"><span id="relpassm" class="message"></span>
+				<input type="submit" value="Login">
+				</div>
+				<span>Register yet?<a href="#" onclick="rgst()">Click to register</a></span>
+			</form>
+		</div>
+		<div class="register" id="rid">
+			<form id="register_info" action="..\PHP\Register.php" method="post">
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="fname" placeholder="Enter your First Name" required onfocus id="fn"><span class="message" id="fnm"></span>
+				</div>				
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="lname" placeholder="Enter your Last Name" required onfocus id="ln"><span class="message" id="lnm"></span>
+				</div>
+				<div class="icon">
+					<img src="../Images And Photo/Icons/address.jpg">
+				<input type="text" name="address" placeholder="Enter your Address" required onfocus id="add"><span class="message" id="addm"></span>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-envelope-open-text"></i>
+				<input type="email" name="email" id="emailadd" placeholder="Valid Email Address" required autocomplete="off" id="eml"><span class="message" id="rem"></span>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="password" placeholder="password" required autocomplete="off" id="rpass"><span class="message" id="passm"></span>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="cpassword" placeholder="Confirm password" required autocomplete="off" id="cpass"><span class="message" id="cpassm"></span>
+				</div>
+				<input type="submit" value="Register">
+				<span>Alredy Registered?<a href="#" onclick="lgn()">Click to login</a></span>
+			</form>
+	</div>
+	<div class="reregister" id="rrid">
+			<form id="register_info" action="..\PHP\Register.php" method="post">
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="fname" placeholder="Enter your First Name" required onfocus>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-user"></i>
+				<input type="text" name="lname" placeholder="Enter your Last Name" required onfocus>
+				</div>
+				<div class="icon">
+					<img src="../Images And Photo/Icons/address.jpg">
+				<input type="text" name="address" placeholder="Enter your Address" required onfocus>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-envelope-open-text"></i>
+				<input type="email" name="email" id="emailadd" placeholder="Valid Email Address" required autocomplete="off">
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="password" placeholder="password" required autocomplete="off">
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-key"></i>
+				<input type="password" name="cpassword" placeholder="Confirm password" required autocomplete="off">
+				</div>
+				<input type="submit" value="Register">
+				<span>Alredy Registered?<a href="#" onclick="lgn()">Click to login</a></span>
+			</form>
+	</div>
+	</div>
+	<script type="text/javascript" src="..\Java Script\script.js"></script>
+</body>
+</html>
